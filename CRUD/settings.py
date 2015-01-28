@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'CRUD.wsgi.application'
 DATABASES = {'default':
                  dj_database_url.config(
                      default=os.environ.get(
-                         'postgres://ljgxydnpavopco:WFKOSEgQP2Cmkw6Lalqlnlo8Og@ec2-54-204-24-202.compute-1.amazonaws.com:5432/d44psdqf6uva0r'))}
+                         ''))}
 
 # Enable Connection Pooling (if desired)
 DATABASES['default']['ENGINE'] = 'django_postgrespool'
